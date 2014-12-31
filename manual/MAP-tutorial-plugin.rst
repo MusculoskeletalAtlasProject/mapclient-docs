@@ -51,9 +51,9 @@ Creating an icon is optional as a default icon is provided, however it is nice t
  
 The are an all many of ways to create an icon to represent our step in the MAP application.  So I will leave this as an exercise for the reader.
 
-For the purposes of this example I created the icon below using the Gimp image manipulation program and it is available :download:`here <resources/images/zinc_model_icon.png>`.
+For the purposes of this example I created the icon below using the Gimp image manipulation program and it is available :download:`here <images/zinc_model_icon.png>`.
 
-.. figure:: resources/images/zinc_model_icon.png
+.. figure:: images/zinc_model_icon.png
    :align: center
    :width: 64
    
@@ -133,11 +133,11 @@ Configuration
 
 Next we need to enable the user to be able to configure the step.  To do this we can use qt-designer to create a 'configuredialog.ui' file that we can convert into Python code using 'pyside-uic'.  We want the configuredialog.ui to look like this:
 
-.. figure:: resources/images/plugin_configure_1.png
+.. figure:: images/plugin_configure_1.png
    :align: center
    :width: 80%
   
-The Qt designer .ui file for this dialog can be found :download:`here <resources/qt/configuredialog.ui>`.  As it can be seen in the figure above we allow the user to set an identifier for the step and define the location of the element and node file that define the Zinc model.  To generate the Python code from the .ui file execute the following command::
+The Qt designer .ui file for this dialog can be found :download:`here <qt/configuredialog.ui>`.  As it can be seen in the figure above we allow the user to set an identifier for the step and define the location of the element and node file that define the Zinc model.  To generate the Python code from the .ui file execute the following command::
 
   pyside-uic --from-imports -o ui_configuredialog.py qt/configuredialog.ui
   

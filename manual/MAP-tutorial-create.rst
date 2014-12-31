@@ -43,7 +43,7 @@ This step configuration makes use of the PMR search widget which gives us the ab
 
 .. _`Figure 1`:
 
-.. figure:: resources/images/image_configureblank.png
+.. figure:: images/image_configureblank.png
    :align: center
    :width: 30%
    
@@ -54,7 +54,7 @@ We are going to conduct an ontological term [**2**] search for our images, we ar
 
 .. _`Figure 2`:
 
-.. figure:: resources/images/image_configurepmr.png
+.. figure:: images/image_configurepmr.png
    :align: center
    :width: 40%
    
@@ -62,7 +62,7 @@ We are going to conduct an ontological term [**2**] search for our images, we ar
 
 .. _`Figure 3`:
 
-.. figure:: resources/images/image_owltermscompleter.png
+.. figure:: images/image_owltermscompleter.png
    :align: center
    :width: 30%
    
@@ -72,7 +72,7 @@ With the correct term in place we can click the search button to return matching
 
 .. _`Figure 4`:
 
-.. figure:: resources/images/image_antcommartresults.png
+.. figure:: images/image_antcommartresults.png
    :align: center
    :width: 30%
    
@@ -94,13 +94,13 @@ Executing the Workflow
 
 At this point you should have a workflow area looking like this:
 
-.. figure:: resources/images/configured_MAP_1.png
+.. figure:: images/configured_MAP_1.png
    :align: center
    :width: 75%
 
 Once the All the steps in the workflow are configured (i.e. no more red gear icons) we can make connections between the steps.  To make a connection between two steps the first step must provide what the second step uses.  When trying to connect two steps that cannot be connected you will see a no entry icon over the connection for a short period of time and then the connection will be removed.  The following image shows an incorrect connection trying to be made.
 
-.. figure:: resources/images/error_connection.png
+.. figure:: images/error_connection.png
    :align: center
    :width: 55%
 
@@ -108,7 +108,7 @@ If the mouse is hovered over a port you will see a description of what the port 
 
 To execute the workflow we need to connect up the steps in the correct manner and save the workflow.  The workflow should be connected up as can be seen in the following image.
 
-.. figure:: resources/images/connected_MAP_1.png
+.. figure:: images/connected_MAP_1.png
    :align: center
    :width: 75%
 

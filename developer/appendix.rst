@@ -16,7 +16,7 @@ The commands for these two methods of generating the documentation are given her
   make -f docs/resources/Sphinx.Makefile html
   
   # Method 2.
-  sphinx-build -t html -c docs/resources docs build
+  sphinx-build -t html docs build
 
 note:
 

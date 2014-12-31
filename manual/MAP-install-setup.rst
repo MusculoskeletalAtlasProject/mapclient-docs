@@ -49,7 +49,7 @@ The MAP Client application should now be installed on your system.  It can be la
 
 which should result in an application window similar to that shown below.
 
-.. figure:: resources/images/map_client_barebones.png
+.. figure:: images/map_client_barebones.png
    :align: center
    :width: 80%
 

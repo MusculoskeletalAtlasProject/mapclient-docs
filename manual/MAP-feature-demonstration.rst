@@ -26,7 +26,7 @@ Quick Tour
 
 When you first load MAP, it will look something like this:
 
-.. figure:: resources/images/map_client_gui.png
+.. figure:: images/map_client_gui.png
    :align: center
    :width: 75%
 
@@ -41,7 +41,7 @@ The Menu bar provides a selection of drop down menus for accessing the applicati
 
 The 'New' menu has two sub-menus: 'New/PMR Workflow' and 'New/Workflow'.  The PMR Workflow menu command will create a new workflow in the chosen directory and use Mercurial to track changes to your project.  When saving the workflow the contents of the project will be transferred to PMR via Mercurial, this transfer is managed by the application.  For more information on the benefits and use of PMR please read the documentation available at `read-the-docs`_ .
 
-.. figure:: resources/images/select_workflow_directory_1.png
+.. figure:: images/select_workflow_directory_1.png
    :align: center
    :width: 75%
 
@@ -60,7 +60,7 @@ The workflow canvas is where we construct and edit our workflow.  We do this by 
 
 When a step is added to the workflow the icon which is visible in the Step box is augmented with visualisations of the Steps ports and the steps configured status.  The annotation of the steps ports will show when the mouse is hovered over a port.  The image below shows the Image Source step with the annotation for the port displayed.
 
-.. figure:: resources/images/step_with_port_info_displayed_1.png
+.. figure:: images/step_with_port_info_displayed_1.png
    :align: center
    :width: 40%
   
@@ -80,7 +80,7 @@ The plugin tool is a simple tool that enables the user to add or remove addition
 
  The reload will only reload the plugins from the current plugin directories, this will not include any changes to the directories in the current dialog.  To confirm changes and load plugins from the plugin directories listed in the plugin manager click the OK button (6).
 
-.. figure:: resources/images/plugin_manager_2.png
+.. figure:: images/plugin_manager_2.png
    :align: center
    :width: 25%
 
@@ -95,7 +95,7 @@ The PMR website uses OAuth to authenticate a consumer and determine consumer acc
 
 If you want the PMR tool to have access to privileged information (your non-public workspaces stored on PMR) you will need to register the PMR tool with the PMR website.  We do this by clicking on the `register` link as shown in the figure below.  This does two things: it shows the Application Authorisation dialog; opens a webbrowser at the PMR website.  [If you are not logged on at the PMR website you will need to do so now to continue, instructions on obtaining a PMR account are available here XXXXX].  On the PMR website you are asked to either accept or deny access to the PMR tool.  If you allow access then the website will display a temporary access token that you will need to copy and paste into the Application Authorisation dialog so that the PMR tool can get the permanent access token.
 
-.. figure:: resources/images/pmr_tool_1.png
+.. figure:: images/pmr_tool_1.png
    :align: center
    :width: 25%
 
@@ -113,13 +113,13 @@ Annotation Tool
 
 The Annotation tool is a very simple tool to help a user annotate the Workflow itself and the Step data directories that are linked to PMR.  At this stage there is a limited vocabulary that the Annotation tool knows about, but this is intended to be extended in coming releases.  The vocabulary that the annotation is aware of is available in the three combo-boxes near the top of the dialog.
 
-.. figure:: resources/images/top_annotation_1.png
+.. figure:: images/top_annotation_1.png
    :align: center
    :width: 40%
 
 The main part of the Annotation tool shows the current annotation from the current target.  
 
-.. figure:: resources/images/main_annotation_1.png
+.. figure:: images/main_annotation_1.png
    :align: center
    :width: 25%
 

@@ -18,7 +18,7 @@ For more detailed information on the plugin interface read the :doc:`MAP-plugin`
 
 The Plugin Creator Wizard takes the user through a series of pages/dialogs that user fills out as suits their needs.  The pages and a description about the elements in each page is given below.  To move from one page to the next use the 'next' button at the bottom of the page, for some pages the 'next' button is only available once the page is complete.  If the 'next' button is not available for a page it will be because at least one of the pages required fields is incomplete.  Required fields that are incomplete will be marked with a small cross icon (|cross icon|).  Once all the required fields are complete the 'next' button will become available, or the 'finish' button in the case of the last page/dialog.
 
-.. |cross icon| image:: resources/images/cross.png
+.. |cross icon| image:: images/cross.png
    :width: 10px
    :height: 10px
 
@@ -27,7 +27,7 @@ Introduction Page
 
 The introduction page contains a short welcome message and a paragraph on the Plugin Creator Wizards purpose.
 
-.. figure:: resources/images/plugin_wizard_introduction_1.png
+.. figure:: images/plugin_wizard_introduction_1.png
    :align: center
    :width: 75%
    
@@ -44,7 +44,7 @@ The package name for the step will be automatically derived from the step name a
 
 An icon may be specified using the icon text box (3), the icon file may be chosen from the file system using the file chooser button (4).  When an icon is specified it will be copied into the created skeleton step and be made available as a Qt resource.  The suggested size of the icon is that it should be around 128px by 128px.
 
-.. figure:: resources/images/plugin_wizard_identify_1.png
+.. figure:: images/plugin_wizard_identify_1.png
    :align: center
    :width: 75%
    
@@ -67,7 +67,7 @@ The ports page sets up the ports for the step.  To add a port use the 'Add' butt
 
 .. _`plugin wizard ports`:
 
-.. figure:: resources/images/plugin_wizard_ports_1.png
+.. figure:: images/plugin_wizard_ports_1.png
    :align: center
    :width: 75%
    
@@ -84,7 +84,7 @@ As an example imagine that I wish to define a port that uses images.  The images
 
 .. _`type column`:
 
-.. figure:: resources/images/plugin_wizard_ports_type_1.png
+.. figure:: images/plugin_wizard_ports_type_1.png
    :align: center
    :width: 75%
    
@@ -94,7 +94,7 @@ Because my images class is of my own design I give it a unique name by prefixing
 
 .. _`like this`:
 
-.. figure:: resources/images/plugin_wizard_ports_definition_1.png
+.. figure:: images/plugin_wizard_ports_definition_1.png
    :align: center
    :width: 75%
    
@@ -105,7 +105,7 @@ Configuration Page
 
 The configuration page can help setup the configuration dialog for the step.  The 'Identifier' check box (1) will add standard code to the step to set up the getIdentifier/setIdentifier methods in  the step, it will also add an entry to the 'ConfigurationDialog' and validate the identifier.  It is highly recommended that the 'Identifier' check box is checked.  Use the 'Add' button (2) to add a configuration parameter to the configuration list (3).  The configuration list has a 'Label' column (4), the value entered here will become a label on the configuration dialog.  The 'Default Value' column (5) will be used to set the default value for the corresponding label.  Edit the values in this list as appropriate.  The 'Remove' button (6) can be used to delete the selected rows.  The configuration parameters entered will be used in generating a configuration dialog. 
 
-.. figure:: resources/images/plugin_wizard_configuration_1.png
+.. figure:: images/plugin_wizard_configuration_1.png
    :align: center
    :width: 75%
    
@@ -120,7 +120,7 @@ Miscellaneous Page
 
 The miscellaneous page sets a number of properties that are not important to the function of the step.  The author name(s) for the step can be set in the text box (1).  The author's name appears when the step plugin is loaded and is not seen or used anywhere else.  The category for the step can be set in the text box (2).  The category determines the group that the step appears in in the Step Box of the application.
 
-.. figure:: resources/images/plugin_wizard_misc_1.png
+.. figure:: images/plugin_wizard_misc_1.png
    :align: center
    :width: 75%
    
@@ -131,7 +131,7 @@ Output Page
 
 The output page sets the directory where the skeleton step will be generated.  The output directory can be set in the text box (1), or selected from the file system using the directory chooser button (2).  The 'cross' icon (3) indicates that the current directory entry is not a directory that can be written into.  The output directory specified in (1) must be an existing directory that you have the ability/permission to write to before the wizard can be successfully finished.
 
-.. figure:: resources/images/plugin_wizard_output_1.png
+.. figure:: images/plugin_wizard_output_1.png
    :align: center
    :width: 75%
    

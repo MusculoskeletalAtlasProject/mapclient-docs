@@ -1,8 +1,8 @@
-.. _MAP-index:
+.. _MAP-main-index:
 
-==========================================
-Musculoskeletal Atlas Project (MAP) Client
-==========================================
+====================================================================
+Musculoskeletal Atlas Project (MAP) Client Documentation - |version|
+====================================================================
 
 .. _MAP Client: https://simtk.org/home/map
 
@@ -20,14 +20,27 @@ Further details on the MAP Client are available in the documents listed below.
  
 .. toctree::
    :maxdepth: 1
+   :titlesonly:
    
-   MAP-install-setup
-   MAP-feature-demonstration
-   MAP-plugin
-   MAP-plugin-wizard
-   MAP-tutorial-create
-   MAP-tutorial-plugin
+   manual/index
+   developer/index
    
-   glossary
-   appendix
+.. toctree::
+   :hidden:
    
+   README
+   
+   
+Copyright
+=========
+
+This documentation is part of MAP Client.
+
+MAP Client is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, version 3.
+
+This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+See the GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+
+Copyright MAP Client Team Members
