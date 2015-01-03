@@ -55,14 +55,16 @@ which should result in an application window similar to that shown below.
 
 The MAP Client relies heavily on plugins to do anything interesting, you can either create these yourself or add already available ones to your application by downloading them and using the Plugin Manager Tool in the MAP Client, read the documents :ref:`MAP-feature-demonstration` and :ref:`MAP-plugin-wizard` to learn more.
 
-Install Using Bazaar
-====================
+Install Using Git
+=================
 
-Bazaar is a distributed revision control tool.  It is used by Launchpad for open source project hosting where the MAP Client source code is situated.  To get bazaar use you systems package management system to install it.  If you are on windows then download and install it from:
+Git is a distributed revision control tool.  It is used by Github for open source project hosting where the MAP Client source code is situated.  To get 'git' use you systems package management system to install it.  If you are on windows then download and install it from:
 
-http://wiki.bazaar.canonical.com/Download
+http://git-scm.com/downloads/guis
 
- and checkout the source code and manually setup the required software
+and clone the source code and manually setup the required software::
+
+    git clone https://github.com/MusculoskeletalAtlasProject/mapclient.git
 
 Installing Pip
 ==============
