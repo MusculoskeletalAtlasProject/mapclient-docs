@@ -84,6 +84,9 @@ We can also use the combobox at the bottom of the dialog (`Figure 1`_) to set th
 
 MAP is not setup to work with streamed resources so we must download the workspace from PMR to our local disk.
 
+.. note::
+   If you do not have all of the plugins required to run the workflow being imported from PMR to your machine you will be prompted to download and install these to a directory. Please ensure you either (1) select a directory that is currently listed in the Plugin Manager Tool or alternatively (2) download to a new directory and add this to the listed directories in the Plugin Manager.
+
 Configuring the Point Cloud Step
 --------------------------------
 
