@@ -116,23 +116,9 @@ Set Git remotes
 
 You now need to setup a read-only remote connection to the prime repository.  Given that you are still in the *mapclient* directory where you initialised the submodules, do the following::
 
-        cd docs
-        git checkout master
-        git remote add prime git@github.com:MusculoskeletalAtlasProject/mapclient-docs.git
-        git config remote.prime.pushurl "you really didn't want to do that"
-
-You now need to repeat this procedure for the src and tests repositories.  In full (starting from the docs directory)::
-
-        cd ../src  
-        git checkout master
-        git remote add prime git@github.com:MusculoskeletalAtlasProject/mapclient-src.git
-        git config remote.prime.pushurl "you really didn't want to do that"
-
-
-        cd ../tests
-        git checkout master
-        git remote add prime git@github.com:MusculoskeletalAtlasProject/mapclient-tests.git
-        git config remote.prime.pushurl "you really didn't want to do that"
+		git submodule foreach git checkout master
+		git submodule foreach 'git remote add prime git@github.com:MusculoskeletalAtlasProject/mapclient-$name.git'
+		git submodule foreach git config remote.prime.pushurl "you really didn't want to do that"
 
 You have now added a new remote to all the submodules named **prime** and set origin as the default fetch and push location to point at repositories under your control on Github.  Here **prime** is a reference to the main definitive repositories where releases are made from for the MAP Client project.  You have also set the **prime** repository as read-only by setting an invalid push url.
 
