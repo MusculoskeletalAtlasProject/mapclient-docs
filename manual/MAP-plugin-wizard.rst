@@ -118,7 +118,7 @@ The configuration page can help setup the configuration dialog for the step.  Th
 Miscellaneous Page
 ==================
 
-The miscellaneous page sets a number of properties that are not important to the function of the step.  The author name(s) for the step can be set in the text box (1).  The author's name appears when the step plugin is loaded and is not seen or used anywhere else.  The category for the step can be set in the text box (2).  The category determines the group that the step appears in in the Step Box of the application.
+The miscellaneous page sets a number of properties that are not important to the function of the step.  The author name(s) for the step can be set in the text box (1).  The author's name appears when the step plugin is loaded and is not seen or used anywhere else.  The category for the step can be set in the text box (2).   The category determines the group that the step appears in in the Step Box of the application.  We encourage plugin developers to make their plugins available to download from an online repository (eg. GitHub or Bitbucket) to promote resource sharing and improve the time and ease with which new workflows can be created. The download link for the plugin from an online repository can be set in the text box (3). This must link to a .zip file download and it is highly recommended that this be provided during plugin creation to allow workflows and their required plugins to be shared easily.
 
 .. figure:: images/plugin_wizard_misc_1.png
    :align: center

@@ -37,7 +37,7 @@ In the Step box we will only see two steps, this is because we have only loaded 
 Menu Bar
 --------
 
-The Menu bar provides a selection of drop down menus for accessing the applications functions.  The File menu provides access to opening, importing, closing workspaces as well as quitting the application.  The Edit menu provides access to the undo/redo functionality.  The Tools menu provides access to the Plugin Manager tool, Physiome Model Repository (PMR) tool and the Annotation tool.  The Help menu provides access to the about box which contains information on contributors and the license that the MAP application is released under.
+The Menu bar provides a selection of drop down menus for accessing the applications functions.  The File menu provides access to opening, importing, closing workspaces as well as quitting the application.  The Edit menu provides access to the undo/redo functionality.  The View menu provides access to the application's log entries.  The Tools menu provides access to the Plugin Manager tool, Physiome Model Repository (PMR) tool and the Annotation tool.  The Help menu provides access to the about box which contains information on contributors and the license that the MAP application is released under.
 
 The 'New' menu has two sub-menus: 'New/PMR Workflow' and 'New/Workflow'.  The PMR Workflow menu command will create a new workflow in the chosen directory and use Mercurial to track changes to your project.  When saving the workflow the contents of the project will be transferred to PMR via Mercurial, this transfer is managed by the application.  For more information on the benefits and use of PMR please read the documentation available at `read-the-docs`_ .
 
@@ -74,7 +74,7 @@ MAP currently has three tools that may be used to aide the management of the wor
 Plugin Manager Tool
 -------------------
 
-The plugin tool is a simple tool that enables the user to add or remove additional plugin directories.  MAP comes with some default plugins which the user can decide to load or not by checking or unchecking the check box (1) at the bottom of the dialog.  External directories are added with the add directory button (2).  Directories are removed by selecting the required directory in the Plugin directories list (3) and clicking the remove directory button (4).  To reload plugins from the current plugin directories use the reload button (5).
+The plugin tool is a simple tool that enables the user to add or remove additional plugin directories.  MAP comes with some default plugins which the user can decide to load or not by checking or unchecking the check box (1) at the bottom of the dialog.  External directories are added with the add directory button (2).  Directories are removed by selecting the required directory in the Plugin directories list (3) and clicking the remove directory button (4).  To reload plugins from the current plugin directories use the reload button (5).  Outdated plugins can also be updated using the Advanced dialog (7).
 
 .. note::
 
@@ -84,7 +84,16 @@ The plugin tool is a simple tool that enables the user to add or remove addition
    :align: center
    :width: 25%
 
-Whilst additions to the plugin path will be visible immediately in the Step box deletions will not be apparent until the next time the MAP Client is started.  This behaviour is a side-effect of the Python programming language.  
+Whilst additions to the plugin path will be visible immediately in the Step box deletions will not be apparent until the next time the MAP Client is started.  This behaviour is a side-effect of the Python programming language.
+
+Advanced Dialog
+^^^^^^^^^^^^^^^
+
+As a result of forward compatibility issues between Python 2 and Python 3 a number of updates may be required for older plugins to work properly in MAP Client.  The Advanced dialog provides a means of analysing the plugins in the directories listed in the Plugin Manager dialog (1) and applying a range of fixers for syntax, indentation and missing plugin information (2).  Once updates have been successfully applied to plugins the Step Box will update automatically and any plugins requiring additional dependencies will be displayed. It is recommended that you analyse and update all plugins before continuing with workflow creation.  We are currently updating all available plugins on the 'mapclient-plugins' GitHub repository to ensure that these compatibility issues are resolved.
+
+.. figure:: images/advanced_dialog.png
+   :align: center
+   :width: 30%
 
 Physiome Model Repository (PMR) Tool
 ------------------------------------
@@ -124,3 +133,15 @@ The main part of the Annotation tool shows the current annotation from the curre
    :width: 25%
 
 In the above image we can see the list of annotations that have been added to the current target.  This is a simplified view of the annotation with the prefix of the terms removed for clarity.
+
+Additional Features
+===================
+
+Log Information Window
+----------------------
+
+The Log Information window displays the application logs for the current session.  This includes information about plugin loading, plugin updates, http requests and general successful or failed processes executed by the program.  Each log is defined by a level (DEBUG, INFO, WARNING, ERROR or CRITICAL) and contains a description and a recorded time.  Logs are displayed in chronological order and can be sorted according to level, time or description(3).  If you wish to access more detailed information about an individual log simply double-click on a log entry or click the Details button (2).  This displays the file from which the log was made in addition to the information described previously. It is also possible to load the log information from a previous MAP Client session using the Load button (1). The Log Information window provides useful debugging information and should be accessed on a regular basis.
+
+.. figure:: images/log_information.png
+   :align: center
+   :width: 30%
